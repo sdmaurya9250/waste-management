@@ -148,6 +148,16 @@ body a:hover {
 .p80bottom {
 	padding: 0 0 80px;
 }
+/* Modal Content/Box */
+.modal-body {
+	background-color: #fefefe;
+	margin: 5% auto; /* 10% from the top and centered */
+	padding: 20px;
+	border: 1px solid #888;
+	width: 80%; /* Width ko increase karein */
+	height: 450px; /* Height ko increase karein */
+  }
+  
 body h1 {
 	font-size: 48px;
 }
