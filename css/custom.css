@@ -210,7 +210,7 @@ Header Start
 }
 .header-style-1 .navbar-expand-lg .navbar-nav .nav-link {
 	font-size: 20px;
-	color: #fff;
+	color: black;
 	font-family: 'Roboto Slab', serif;
 	font-weight: 400;
 	padding: 35px 15px;
@@ -234,7 +234,7 @@ Header Start
 	border: 0px;
 }
 .topside-menu a {
-	color: #fffefe;
+	color: black;
 	line-height: 40px;
 	font-family: 'Roboto Slab', serif;
 }
@@ -381,7 +381,7 @@ Home Page Content Start
 .slider-caption strong {
 	font-size: 36px;
 	font-family: 'Roboto Slab', serif;
-	color: #fff;
+	color: black;
 	line-height: 40px;
 	margin-bottom: 25px;
 	display: block;
@@ -389,7 +389,7 @@ Home Page Content Start
 .slider-caption h1 {
 	font-size: 90px;
 	font-family: 'Roboto Slab', serif;
-	color: #fff;
+	color: black;
 	line-height: 70px;
 	margin: 0 0 15px;
 }
@@ -399,7 +399,7 @@ Home Page Content Start
 .slider-caption p {
 	font-size: 22px;
 	font-family: 'droidSans', serif;
-	color: #fff;
+	color: black;
 	width: 60%;
 	margin: 0 0 37px;
 }
@@ -408,7 +408,7 @@ Home Page Content Start
 	margin: 0px;
 }
 .slider-caption a {
-	border: 2px solid #fff;
+	border: 2px solid black;
 	height: 55px;
 	line-height: 51px;
 	padding: 0 50px;
@@ -1597,7 +1597,7 @@ a.cart-icon:hover, a.search-icon:hover {
 /***************  Service Area  *****************/
 
 .services-area {
-	margin-top: -105px;
+	/* margin-top: px; */
 	position: relative;
 	z-index: 99;
 }
@@ -1646,7 +1646,7 @@ section.services-area ul li:after {
 	left: 0;
 	width: 100%;
 	height: 0;
-	background: #66bb6a;
+	background: linear-gradient(to right, rgba(104, 159, 56, 1) 0%, rgba(139, 195, 74, 1) 100%);
 	content: "";
 	border-radius: 5px;
 	opacity: 0;
@@ -6051,9 +6051,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cccccc', end
 	margin-right: 5px;
 }
 .timeline-box {
-	background: #f7f7f7;
-	border: 1px solid #eeeeee;
-	border-radius: 5px;
 	padding: 20px;
 }
 .timeline-box h6 {

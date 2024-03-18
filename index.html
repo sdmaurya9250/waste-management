@@ -7,9 +7,15 @@
    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
    <meta name="description" content="">
    <meta name="author" content="">
+   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+
    <link rel="icon" href="images/favicon.png">
    <title>ECO HTML</title>
    <!-- CSS FILES START -->
+   <link href="css/style.css" rel="stylesheet">
    <link href="css/custom.css" rel="stylesheet">
    <link href="css/color.css" rel="stylesheet">
    <link href="css/responsive.css" rel="stylesheet">
@@ -19,13 +25,18 @@
    <link href="css/all.min.css" rel="stylesheet">
    <link href="css/slick.css" rel="stylesheet">
    <!-- CSS FILES End -->
+   <style>
+      body {
+         background-color: #00e3ff14;
+      }
+   </style>
 </head>
 
 <body>
    <div class="wrapper home1">
       <!--Header Start-->
       <header class="header-style-1">
-         <nav class="navbar navbar-expand-lg">
+         <nav class="navbar navbar-expand-lg shadow-lg">
             <a class="navbar-brand" href="/"><img src="images/logo.png" alt=""></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <i
@@ -33,37 +44,35 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                <ul class="navbar-nav mr-auto">
                   <li class="nav-item dropdown">
-                     <a class="nav-link dropdown-toggle" href="#home-slider" role="button" data-toggle="dropdown"
-                        aria-haspopup="true" aria-expanded="false"> Home </a>
+                     <a class="nav-link font-weight-bold" href="#" role="button"> Home </a>
                   </li>
-                  <!-- <li class="nav-item"> <a class="nav-link" href="about.html">About</a> </li> -->
+                  <li class="nav-item dropdown">
+                     <a class="nav-link dropdown-toggle font-weight-bold fs-1" href="#about" role="button"
+                        aria-haspopup="true" aria-expanded="false"> About </a>
 
                   <li class="nav-item dropdown">
-                     <a class="nav-link dropdown-toggle" href="#about" role="button" aria-haspopup="true"
-                        aria-expanded="false"> About </a>
-
-                  <li class="nav-item dropdown">
-                     <a class="nav-link dropdown-toggle" href="#" role="button" aria-haspopup="true"
+                     <a class="nav-link dropdown-toggle font-weight-bold" href="#" role="button" aria-haspopup="true"
                         aria-expanded="false"> How it Work </a>
 
                   </li>
                   <li class="nav-item dropdown">
-                     <a class="nav-link dropdown-toggle" href="#Successhistory" role="button" aria-haspopup="true"
-                        aria-expanded="false"> Our Success </a>
+                     <a class="nav-link dropdown-toggle font-weight-bold" href="#Successhistory" role="button"
+                        aria-haspopup="true" aria-expanded="false"> Our Success </a>
 
                   </li>
 
                   </li>
                   <li class="nav-item dropdown">
-                     <a class="nav-link dropdown-toggle" href="#ContactUs" role="button" aria-haspopup="true"
-                        class="scroll-link" onclick="slowScroll('#target')" aria-expanded="false"> Contact Us </a>
+                     <a class="nav-link dropdown-toggle font-weight-bold" href="#ContactUs" role="button"
+                        aria-haspopup="true" class="scroll-link" onclick="slowScroll('#target')" aria-expanded="false">
+                        Contact Us </a>
 
                   </li>
                </ul>
                <ul class="float-right topside-menu">
-                  <li> <a class="con" href="#">Log in</a> </li>
+                  <li> <a class="con font-weight-bold" href="#">Log in</a> </li>
                   <!-- <li><a href="#search"> <i class="fas fa-search"></i> </a></li> -->
-                  <li class="burger"> <a href="#"><i class="fas fa-bars"></i> Menu</a> </li>
+                  <li class="burger font-weight-bold"> <a href="#"><i class="fas fa-bars"></i> Menu</a> </li>
                </ul>
             </div>
          </nav>
@@ -81,19 +90,26 @@
          <div class="item">
             <div class="slider-caption">
                <div class="container">
-                  <strong>100k Plants Grown in 2018,</strong>
-                  <h1>Heal the World</h1>
-                  <p> Environmental awareness is not a trend that comes into style a few months and stops. Individuals
-                     working towards making a small impact on Earth.</p>
+                  <div class="row">
+                     <div class="col-6 col-md-6 col-sm-6 col-lg-6 col-xl-6">
+                        <strong>100k Plants Grown in 2018,</strong>
+                        <h1>The World</h1>
+                        <p> Environmental awareness is not a trend that comes
+                           working towards making a small impact on Earth.</p>
+                     </div>
+                     <div class="col-6 col-md-6 col-sm-6 col-lg-6 col-xl-6">
+                        <img src="images/bgimg/tempo.png" alt="">
+                     </div>
+                  </div>
                </div>
             </div>
-            <img src="images/h1-slide1.jpg" alt="">
+            <img src="images/bgimg/bg.jpg" alt="">
          </div>
       </section>
       <!--Slider End-->
       <!--Service Area Start-->
       <section class="services-area wf100">
-         <div class="container">
+         <div class="container mt-5">
             <ul>
                <li>
                   <a href="paper.html">
@@ -169,21 +185,26 @@
 
       <section class="container">
          <div class="row">
-            <div class="col-md-6 mt-5">
-               <div class="c-info text-center shadow-lg">
+            <div class="col-md-6 mt-5" data-aos="zoom-in-up">
+               <div class="c-info text-center shadow-lg border border-info backcolor">
+                  <i class="size_i fa-solid fa-clock"></i>
                   <h6 class="p-3">Schedule Pickup</h6>
                </div>
             </div>
-            <div class="col-md-6 mt-5">
-               <div class="c-info text-center shadow-lg">
-                  <h6 class="p-3">Rate List</h6>
-               </div>
+            <div class="col-md-6 mt-5" data-aos="zoom-in-up">
+               <a href="/paper.html">
+                  <div class="c-info text-center shadow-lg border border-primary backcolor">
+                     <i class="size_i2 fa-solid fa-clipboard-list"></i>
+                     <h6 class="p-3">Rate List</h6>
+                  </div>
+               </a>
             </div>
          </div>
          <div class="row">
-            <div class="col-md-12 mt-5">
-               <div class="c-info text-center shadow-lg">
-                  <h6 class="p-5">Schedule Pickup</h6>
+            <div class="col-md-12 mt-5" data-aos="zoom-in-up">
+               <div class="c-info text-center shadow-lg border border-warning backcolor">
+                  <i class="size_i3 fa-solid fa-truck-fast"></i>
+                  <h6 class="p-3">How it will Work?</h6>
                </div>
             </div>
          </div>
@@ -191,7 +212,7 @@
 
 
       <!--About Section Start-->
-      <section class="home-about wf100 p80" id="about">
+      <section class=" wf100 p80 mb-5 shadow-lg mt-5" id="about"> <!--home-about-->
          <div class="container">
             <div class="row">
                <div class="col-md-6">
@@ -232,300 +253,160 @@
             </div>
          </div>
       </section>
+      <!-- How its work -->
+      <section id="How_it_work">
+         <div class="container how mt-5 mb-5">
+            <div class="mb-5">
+               <h2>How it Work</h2>
+            </div>
+            <div class="row" data-aos="fade-right">
+               <div class="c-info col polygon polygon1 border-5 border-primary backcolor">
+                  <i class="size_1 fas fa-recycle"></i>
+                  <h6 class="p-3 m-3">Segregate Your Recyclables</h6>
+               </div>
+               <div class="c-info col polygon polygon2 border-5 border-danger backcolor">
+                  <i class="size_2 far fa-clock"></i>
+                  <h6 class="p-3 m-3">Schedule a Pickup</h6>
+               </div>
+               <div class="c-info col polygon polygon3 border-5 border-warning backcolor">
+                  <i class="size_3 fas fa-door-open"></i>
+                  <h6 class="p-3 m-3">Door Step Service</h6>
+               </div>
+               <div class="c-info col polygon polygon4 border-5 border-info backcolor">
+                  <i class="size_4 fas fa-money-bill-alt"></i>
+                  <h6 class="p-3 m-3">Instant Payment</h6>
+               </div>
+               <div class="c-info col polygon polygon5 border-5 border-success backcolor">
+                  <i class="size_5 fas fa-thumbs-up"></i>
+                  <h6 class="p-3 m-3">Congrats</h6>
+               </div>
+            </div>
+         </div>
+      </section>
 
-
-      <section>
-         <div class="our-success-story wf100" id="Successhistory">
-            <div class="container">
+      <section class="san">
+         <div class="container">
+            <div class="container1">
                <div class="row">
-                  <div class="col-lg-4">
-                     <div class="story-title-bg"> <strong class="t1">ecova.</strong> <strong class="t2">20+</strong>
-                        <strong class="t3">Years of
-                           Services</strong>
-                     </div>
-                  </div>
-                  <div class="col-lg-8">
-                     <div class="section-title-2">
-                        <h5>Our History</h5>
-                        <h2>Our Success Story</h2>
-                     </div>
-                     <!--eco History Start-->
-                     <div class="eco-history">
-                        <div class="timeline-slider">
-                           <div class="timeline-nav">
-                              <div><span><strong>2000 - 2002</strong></span></div>
-                              <div><span><strong>2002 - 2006</strong></span></div>
-                              <div><span><strong>2006 - 2009</strong></span></div>
-                              <div><span><strong>2009 - 2012</strong></span></div>
-                              <div><span><strong>2012 - 2015</strong></span></div>
-                              <div><span><strong>2015 - 2018</strong></span></div>
-                           </div>
-                           <div class="timeline">
-                              <!--Timeline Text Start-->
-                              <div>
-                                 <div class="row">
-                                    <div class=" col-4">
-                                       <div class="timeline-box">
-                                          <h6>We Started</h6>
-                                          <p> In 1998, We took step towards to make healthy and safe Eco Environment in
-                                             the different fields, and our passion is: to clean the Eco Environment for
-                                             the next generations who shall face the problem in future. </p>
-                                       </div>
-                                    </div>
-                                    <div class=" col-4">
-                                       <div class="timeline-box">
-                                          <h6>Results of Hardwork</h6>
-                                          <p> We have a very strong group of our senior team members and volunteers. But
-                                             I must explain to you how all this mistaken idea of denounce pleasure and
-                                             praising pain was born and I will give you a complete account. </p>
-                                       </div>
-                                    </div>
-                                    <div class=" col-4">
-                                       <div class="timeline-box">
-                                          <h6>Project </h6>
-                                          <p> On the other hand, we denounce with righteous indignation and dislike men
-                                             who are so beguiled and demoralized by the charms of pleasure of the
-                                             moment, so blinded by desire, that they cannot foresee. </p>
-                                       </div>
-                                    </div>
-                                 </div>
-                              </div>
-                              <!--Timeline Text End-->
-                              <!--Timeline Text Start-->
-                              <div>
-                                 <div class="row">
-                                    <div class=" col-4">
-                                       <div class="timeline-box">
-                                          <h6>Results of Hardwork</h6>
-                                          <p> We have a very strong group of our senior team members and volunteers. But
-                                             I must explain to you how all this mistaken idea of denounce pleasure and
-                                             praising pain was born and I will give you a complete account. </p>
-                                       </div>
-                                    </div>
-                                    <div class=" col-4">
-                                       <div class="timeline-box">
-                                          <h6>Project </h6>
-                                          <p> On the other hand, we denounce with righteous indignation and dislike men
-                                             who are so beguiled and demoralized by the charms of pleasure of the
-                                             moment, so blinded by desire, that they cannot foresee. </p>
-                                       </div>
-                                    </div>
-                                    <div class=" col-4">
-                                       <div class="timeline-box">
-                                          <h6>We Started</h6>
-                                          <p> In 1998, We took step towards to make healthy and safe Eco Environment in
-                                             the different fields, and our passion is: to clean the Eco Environment for
-                                             the next generations who shall face the problem in future. </p>
-                                       </div>
-                                    </div>
-                                 </div>
-                              </div>
-                              <!--Timeline Text End-->
-                              <!--Timeline Text Start-->
-                              <div>
-                                 <div class="row">
-                                    <div class=" col-4">
-                                       <div class="timeline-box">
-                                          <h6>We Started</h6>
-                                          <p> In 1998, We took step towards to make healthy and safe Eco Environment in
-                                             the different fields, and our passion is: to clean the Eco Environment for
-                                             the next generations who shall face the problem in future. </p>
-                                       </div>
-                                    </div>
-                                    <div class=" col-4">
-                                       <div class="timeline-box">
-                                          <h6>Results of Hardwork</h6>
-                                          <p> We have a very strong group of our senior team members and volunteers. But
-                                             I must explain to you how all this mistaken idea of denounce pleasure and
-                                             praising pain was born and I will give you a complete account. </p>
-                                       </div>
-                                    </div>
-                                    <div class=" col-4">
-                                       <div class="timeline-box">
-                                          <h6>Project </h6>
-                                          <p> On the other hand, we denounce with righteous indignation and dislike men
-                                             who are so beguiled and demoralized by the charms of pleasure of the
-                                             moment, so blinded by desire, that they cannot foresee. </p>
-                                       </div>
-                                    </div>
-                                 </div>
-                              </div>
-                              <!--Timeline Text End-->
-                              <!--Timeline Text Start-->
-                              <div>
-                                 <div class="row">
-                                    <div class=" col-4">
-                                       <div class="timeline-box">
-                                          <h6>Results of Hardwork</h6>
-                                          <p> We have a very strong group of our senior team members and volunteers. But
-                                             I must explain to you how all this mistaken idea of denounce pleasure and
-                                             praising pain was born and I will give you a complete account. </p>
-                                       </div>
-                                    </div>
-                                    <div class=" col-4">
-                                       <div class="timeline-box">
-                                          <h6>Project </h6>
-                                          <p> On the other hand, we denounce with righteous indignation and dislike men
-                                             who are so beguiled and demoralized by the charms of pleasure of the
-                                             moment, so blinded by desire, that they cannot foresee. </p>
-                                       </div>
-                                    </div>
-                                    <div class=" col-4">
-                                       <div class="timeline-box">
-                                          <h6>We Started</h6>
-                                          <p> In 1998, We took step towards to make healthy and safe Eco Environment in
-                                             the different fields, and our passion is: to clean the Eco Environment for
-                                             the next generations who shall face the problem in future. </p>
-                                       </div>
-                                    </div>
-                                 </div>
-                              </div>
-                              <!--Timeline Text End-->
-                              <!--Timeline Text Start-->
-                              <div>
-                                 <div class="row">
-                                    <div class=" col-4">
-                                       <div class="timeline-box">
-                                          <h6>We Started</h6>
-                                          <p> In 1998, We took step towards to make healthy and safe Eco Environment in
-                                             the different fields, and our passion is: to clean the Eco Environment for
-                                             the next generations who shall face the problem in future. </p>
-                                       </div>
-                                    </div>
-                                    <div class=" col-4">
-                                       <div class="timeline-box">
-                                          <h6>Results of Hardwork</h6>
-                                          <p> We have a very strong group of our senior team members and volunteers. But
-                                             I must explain to you how all this mistaken idea of denounce pleasure and
-                                             praising pain was born and I will give you a complete account. </p>
-                                       </div>
-                                    </div>
-                                    <div class=" col-4">
-                                       <div class="timeline-box">
-                                          <h6>Project </h6>
-                                          <p> On the other hand, we denounce with righteous indignation and dislike men
-                                             who are so beguiled and demoralized by the charms of pleasure of the
-                                             moment, so blinded by desire, that they cannot foresee. </p>
-                                       </div>
-                                    </div>
-                                 </div>
-                              </div>
-                              <!--Timeline Text End-->
-                              <!--Timeline Text Start-->
-                              <div>
-                                 <div class="row">
-                                    <div class=" col-4">
-                                       <div class="timeline-box">
-                                          <h6>Results of Hardwork</h6>
-                                          <p> We have a very strong group of our senior team members and volunteers. But
-                                             I must explain to you how all this mistaken idea of denounce pleasure and
-                                             praising pain was born and I will give you a complete account. </p>
-                                       </div>
-                                    </div>
-                                    <div class=" col-4">
-                                       <div class="timeline-box">
-                                          <h6>Project </h6>
-                                          <p> On the other hand, we denounce with righteous indignation and dislike men
-                                             who are so beguiled and demoralized by the charms of pleasure of the
-                                             moment, so blinded by desire, that they cannot foresee. </p>
-                                       </div>
-                                    </div>
-                                    <div class=" col-4">
-                                       <div class="timeline-box">
-                                          <h6>We Started</h6>
-                                          <p> In 1998, We took step towards to make healthy and safe Eco Environment in
-                                             the different fields, and our passion is: to clean the Eco Environment for
-                                             the next generations who shall face the problem in future. </p>
-                                       </div>
-                                    </div>
-                                 </div>
-                              </div>
-                              <!--Timeline Text End-->
-                           </div>
+                  <div class="col-4 col-md-4 col-sm-4 col-lg-4 col-xl-4">
+                     <div class="card1">
+                        <div class="imgBx">
+                           <img class="img1" src="images/Paper/news.jpg" alt="">
+                        </div>
+                        <div class="content1">
+                           <h2>Card 1</h2>
+                           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, deserunt voluptas suscipit
+                              dicta non
+                              iure minus rerum.</p>
                         </div>
                      </div>
-                     <!--Political History End-->
+                  </div>
+                  <div class="col-4 col-md-4 col-sm-4 col-lg-4 col-xl-4">
+                     <div class="card1">
+                        <div class="imgBx">
+                           <img class="img1" src="images/Paper/magazine.jpg" alt="">
+                        </div>
+                        <div class="content1">
+                           <h2>Card 2</h2>
+                           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, deserunt voluptas suscipit
+                              dicta non
+                              iure minus rerum.</p>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-4 col-md-4 col-sm-4 col-lg-4 col-xl-4">
+                     <div class="card1">
+                        <div class="imgBx">
+                           <img class="img1" src="images/Paper/journal.jpg" alt="">
+                        </div>
+                        <div class="content1">
+                           <h2>Card 3</h2>
+                           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, deserunt voluptas suscipit
+                              dicta non
+                              iure minus.</p>
+                        </div>
+                     </div>
                   </div>
                </div>
             </div>
          </div>
-         <!--Our Success Story End-->
       </section>
 
-
       <!--Services Slider Start-->
-      <section class="home-services wf100 p80bottom">
-         <div class="row">
-            <!--Services Box Start-->
-            <div class="ser-col">
-               <div class="ser-box">
-                  <div class="ser-thumb">
-                     <a href="#"><i class="fas fa-link"></i></a>
-                     <img src="images/serimg1.jpg" alt="">
-                  </div>
-                  <div class="ser-txt">
-                     <h4> <a href="#">Control Pollution & Environment</a> </h4>
-                     <span class="aicon"><i class="fas fa-arrow-right"></i></span>
-                  </div>
-               </div>
-            </div>
-            <!--Services Box End-->
-            <!--Services Box Start-->
-            <div class="ser-col">
-               <div class="ser-box">
-                  <div class="ser-thumb"><a href="#"><i class="fas fa-link"></i></a> <img src="images/serimg2.jpg"
-                        alt=""></div>
-                  <div class="ser-txt">
-                     <h4> <a href="#">Save World’s
-                           Water Resources</a>
-                     </h4>
-                     <span class="aicon"><i class="fas fa-arrow-right"></i></span>
+      <section class=" wf100 mt-5 p80bottom">
+         <div class="container">
+            <div class="row">
+               <!--Services Box Start-->
+               <div class="ser-col">
+                  <div class="ser-box">
+                     <div class="ser-thumb">
+                        <a href="#"><i class="fas fa-link"></i></a>
+                        <img src="images/serimg1.jpg" alt="">
+                     </div>
+                     <div class="ser-txt">
+                        <h4> <a href="#">Control Pollution & Environment</a> </h4>
+                        <span class="aicon"><i class="fas fa-arrow-right"></i></span>
+                     </div>
                   </div>
                </div>
-            </div>
-            <!--Services Box End-->
-            <!--Services Box Start-->
-            <div class="ser-col">
-               <div class="ser-box">
-                  <div class="ser-thumb"><a href="#"><i class="fas fa-link"></i></a> <img src="images/serimg3.jpg"
-                        alt=""></div>
-                  <div class="ser-txt">
-                     <h4> <a href="#">Recycling & Waste
-                           Management</a>
-                     </h4>
-                     <span class="aicon"><i class="fas fa-arrow-right"></i></span>
+               <!--Services Box End-->
+               <!--Services Box Start-->
+               <div class="ser-col">
+                  <div class="ser-box">
+                     <div class="ser-thumb"><a href="#"><i class="fas fa-link"></i></a> <img src="images/serimg2.jpg"
+                           alt=""></div>
+                     <div class="ser-txt">
+                        <h4> <a href="#">Save World’s
+                              Water Resources</a>
+                        </h4>
+                        <span class="aicon"><i class="fas fa-arrow-right"></i></span>
+                     </div>
                   </div>
                </div>
-            </div>
-            <!--Services Box End-->
-            <!--Services Box Start-->
-            <div class="ser-col">
-               <div class="ser-box">
-                  <div class="ser-thumb"> <a href="#"><i class="fas fa-link"></i></a> <img src="images/serimg4.jpg"
-                        alt=""></div>
-                  <div class="ser-txt">
-                     <h4> <a href="#">Save Plants &
-                           Forest Planting</a>
-                     </h4>
-                     <span class="aicon"><i class="fas fa-arrow-right"></i></span>
+               <!--Services Box End-->
+               <!--Services Box Start-->
+               <div class="ser-col">
+                  <div class="ser-box">
+                     <div class="ser-thumb"><a href="#"><i class="fas fa-link"></i></a> <img src="images/serimg3.jpg"
+                           alt=""></div>
+                     <div class="ser-txt">
+                        <h4> <a href="#">Recycling & Waste
+                              Management</a>
+                        </h4>
+                        <span class="aicon"><i class="fas fa-arrow-right"></i></span>
+                     </div>
                   </div>
                </div>
-            </div>
-            <!--Services Box End-->
-            <!--Services Box Start-->
-            <div class="ser-col">
-               <div class="ser-box">
-                  <div class="ser-thumb"><a href="#"><i class="fas fa-link"></i></a> <img src="images/serimg5.jpg"
-                        alt=""></div>
-                  <div class="ser-txt">
-                     <h4> <a href="#">Implement Solar
-                           & Wind Energies</a>
-                     </h4>
-                     <span class="aicon"><i class="fas fa-arrow-right"></i></span>
+               <!--Services Box End-->
+               <!--Services Box Start-->
+               <div class="ser-col">
+                  <div class="ser-box">
+                     <div class="ser-thumb"> <a href="#"><i class="fas fa-link"></i></a> <img src="images/serimg4.jpg"
+                           alt=""></div>
+                     <div class="ser-txt">
+                        <h4> <a href="#">Save Plants &
+                              Forest Planting</a>
+                        </h4>
+                        <span class="aicon"><i class="fas fa-arrow-right"></i></span>
+                     </div>
                   </div>
                </div>
+               <!--Services Box End-->
+               <!--Services Box Start-->
+               <div class="ser-col">
+                  <div class="ser-box">
+                     <div class="ser-thumb"><a href="#"><i class="fas fa-link"></i></a> <img src="images/serimg5.jpg"
+                           alt=""></div>
+                     <div class="ser-txt">
+                        <h4> <a href="#">Implement Solar
+                              & Wind Energies</a>
+                        </h4>
+                        <span class="aicon"><i class="fas fa-arrow-right"></i></span>
+                     </div>
+                  </div>
+               </div>
+               <!--Services Box End-->
             </div>
-            <!--Services Box End-->
          </div>
          <!-- <div class="load-more text-center w-100"> <a href="#" class="lm">View More Work</a> </div> -->
       </section>
@@ -595,32 +476,32 @@
                <div class="col-md-3">
                   <ul class="counter">
                      <li class="ml-5">
-                        <h4>Client Satisfcation</h4>
-                        <p class="counter-count">59000</p>
+                        <h6>Client Satisfcation</h6>
+                        <p class="counter-count">400</p>
                      </li>
                   </ul>
                </div>
                <div class="col-md-3">
                   <ul class="counter">
                      <li class="ml-5">
-                        <h4>Wasted Recycle</h4>
-                        <p class="counter-count">69000</p>
+                        <h6>Wasted Recycle</h6>
+                        <p class="counter-count">300</p>
                      </li>
                   </ul>
                </div>
                <div class="col-md-3">
                   <ul class="counter">
                      <li class="ml-5">
-                        <h4>Client Satisfcation</h4>
-                        <p class="counter-count">59000</p>
+                        <h6>Collection Partners</h6>
+                        <p class="counter-count">100</p>
                      </li>
                   </ul>
                </div>
                <div class="col-md-3">
                   <ul class="counter">
                      <li class="ml-5">
-                        <h4>City Serving</h4>
-                        <p class="counter-count">49000</p>
+                        <h6>City Serving</h6>
+                        <p class="counter-count">500</p>
                      </li>
                   </ul>
                </div>
@@ -630,12 +511,12 @@
       <!--Current Promises Section End-->
 
       <!--Contact Start-->
-      <section class="promises mt-5 mb-5 contact-page wf100 p80" id="ContactUs">
+      <section class=" shadow-lg mt-5 mb-5 contact-page wf100 p80" id="ContactUs">
          <div class="container">
             <div class="row">
                <div class="col-md-6">
                   <div class="contact-form">
-                     <h3 class="text-white">Feel Free to Contact us.</h3>
+                     <h3 class="text-black">Feel Free to Contact us.</h3>
                      <ul class="cform">
                         <li class="half pr-15">
                            <input type="text" class="form-control" placeholder="Full Name">
@@ -666,35 +547,6 @@
                </div>
             </div>
          </div>
-         <section>
-            <div class="container contact-info">
-               <div class="shadow-lg rounded row">
-                  <div class="col-md-12 text-center">
-                     <h3 class="text-white shadow-lg">Contact Information</h3>
-                  </div>
-                  <div class="col-md-4">
-                     <div class="c-info">
-                        <h6>Address:</h6>
-                        <p> 4700 Millenia Blvd # 175, Orlando, FL 32839, USA </p>
-                     </div>
-                  </div>
-                  <div class="col-md-4">
-                     <div class="c-info">
-                        <h6>Contact:</h6>
-                        <p><strong>Phone:</strong> +1 321 2345 678-9</p>
-                        <p><strong>Fax:</strong> +1 321 2345 876-7</p>
-                     </div>
-                  </div>
-                  <div class="col-md-4">
-                     <div class="c-info">
-                        <h6>For More Information:</h6>
-                        <p><strong>Email:</strong> info@ecova.com</p>
-                        <p>contact@ecova.com</p>
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </section>
       </section>
       <!--Contact End-->
 
@@ -850,6 +702,13 @@
    <script src="js/slick.min.js"></script>
    <script src="js/custom.js"></script>
    <script src="js/scroll.js"></script>
+   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+   <script>
+      AOS.init({
+         offset: 100,
+         duration: 1000,
+      });
+   </script>
 
 </body>
 
